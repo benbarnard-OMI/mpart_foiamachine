@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Agent Task Details - MPART FOIA Machine{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="mb-4">
+                <a href="{% url 'agents:dashboard' %}" class="btn btn-outline-secondary mb-3">
+                    <i class="bi bi-arrow-left"></i> Back to Dashboard
+                </a>
+                <h1>Agent Task Details</h1>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Task Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Task Type:</strong> {{ task.get_task_type_display }}</p>
+                            <p><strong>Status:</strong> <span class="badge bg-{{ task.status }}">{{ task.get_status_display }}</span></p>
+                            <p><strong>Model:</strong> {{ task.agent_model }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Created:</strong> {{ task.created_at|date:"M d, Y H:i" }}</p>
+                            {% if task.completed_at %}
+                            <p><strong>Completed:</strong> {{ task.completed_at|date:"M d, Y H:i" }}</p>
+                            {% endif %}
+                            <p><strong>Tokens Used:</strong> {{ task.tokens_used }}</p>
+                        </div>
+                    </div>
+                    {% if task.foia_request %}
+                    <hr>
+                    <p><strong>Related Request:</strong> 
+                        <a href="{% url 'requests:detail' task.foia_request.id %}">{{ task.foia_request.title }}</a>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+
+            {% if task.input_data %}
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Input Data</h5>
+                </div>
+                <div class="card-body">
+                    <pre>{{ task.input_data|pprint }}</pre>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if task.output_data %}
+            <div class="card mb-3">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">Output</h5>
+                </div>
+                <div class="card-body">
+                    <pre>{{ task.output_data|pprint }}</pre>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if task.error_message %}
+            <div class="card mb-3">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="mb-0">Error</h5>
+                </div>
+                <div class="card-body">
+                    <pre>{{ task.error_message }}</pre>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

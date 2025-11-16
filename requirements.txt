@@ -1,0 +1,49 @@
+# Core Django and Web Framework
+Django==4.2.24
+gunicorn==22.0.0
+whitenoise==6.6.0
+
+# Database
+psycopg2-binary==2.9.9
+dj-database-url==2.1.0
+
+# API and REST
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+
+# AI/LLM Integration for Agent Flows
+openai==1.12.0
+langchain==0.1.9
+langchain-openai==0.0.6
+
+# Task Queue for Agent Processing
+celery==5.3.6
+redis==5.0.1
+
+# Forms and Validation
+django-crispy-forms==2.1
+crispy-bootstrap5==2024.2
+
+# User Authentication and Authorization
+django-allauth==0.61.1
+
+# Email
+django-anymail==10.2
+
+# File Handling
+python-magic==0.4.27
+Pillow==10.3.0
+
+# Utilities
+python-dotenv==1.0.1
+python-dateutil==2.8.2
+pytz==2024.1
+
+# Testing
+pytest==8.0.0
+pytest-django==4.8.0
+factory-boy==3.3.0
+
+# Code Quality
+black==24.2.0
+flake8==7.0.0

@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Request - MPART FOIA Machine{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="mb-4">Create FOIA Request</h1>
+            
+            <div class="card">
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <i class="bi bi-robot"></i> <strong>AI Assistant Available!</strong> 
+                        Describe what you want and our AI will help draft a professional FOIA request.
+                    </div>
+
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Request Title *</label>
+                            <input type="text" class="form-control" id="title" name="title" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description *</label>
+                            <textarea class="form-control" id="description" name="description" rows="3" 
+                                      placeholder="Describe what records you're seeking..." required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="agency" class="form-label">Target Agency *</label>
+                            <select class="form-select" id="agency" name="agency" required>
+                                <option value="">Select an agency...</option>
+                                <option value="1">Example Federal Agency</option>
+                            </select>
+                            <small class="text-muted">
+                                <a href="{% url 'agency:list' %}" target="_blank">Browse all agencies</a>
+                            </small>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-info" id="draft-with-ai">
+                                <i class="bi bi-robot"></i> Draft with AI
+                            </button>
+                            <small class="text-muted ms-2">AI will generate request text based on your description</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="request_body" class="form-label">Request Text *</label>
+                            <textarea class="form-control" id="request_body" name="request_body" rows="10"
+                                      placeholder="The full text of your FOIA request will appear here..." required></textarea>
+                            <small class="text-muted">You can edit the AI-generated text or write your own</small>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a href="{% url 'requests:list' %}" class="btn btn-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check-circle"></i> Create Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.getElementById('draft-with-ai').addEventListener('click', async function() {
+    const btn = this;
+    const originalText = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Drafting...';
+    
+    const description = document.getElementById('description').value;
+    const agencySelect = document.getElementById('agency');
+    const agencyName = agencySelect.options[agencySelect.selectedIndex].text;
+    
+    if (!description) {
+        alert('Please enter a description first');
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+        return;
+    }
+    
+    try {
+        const response = await fetch('/api/agents/draft-request/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+            },
+            body: JSON.stringify({
+                description: description,
+                agency_name: agencyName,
+                agency_type: 'federal'
+            })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            document.getElementById('request_body').value = data.request_text;
+            alert('Request drafted successfully! Review and edit as needed.');
+        } else {
+            alert('Error: ' + (data.error || 'Failed to draft request'));
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+    }
+});
+</script>
+{% endblock %}

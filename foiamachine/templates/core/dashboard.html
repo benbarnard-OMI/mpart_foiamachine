@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - MPART FOIA Machine{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1>Dashboard</h1>
+            <p class="text-muted">Welcome back, {{ user.full_name }}!</p>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-file-earmark-text display-4 text-primary"></i>
+                    <h3 class="mt-2">0</h3>
+                    <p class="text-muted mb-0">Total Requests</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-hourglass-split display-4 text-warning"></i>
+                    <h3 class="mt-2">0</h3>
+                    <p class="text-muted mb-0">Pending</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-check-circle display-4 text-success"></i>
+                    <h3 class="mt-2">0</h3>
+                    <p class="text-muted mb-0">Completed</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-robot display-4 text-info"></i>
+                    <h3 class="mt-2">0</h3>
+                    <p class="text-muted mb-0">Agent Tasks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Recent Requests</h5>
+                    <a href="{% url 'requests:create' %}" class="btn btn-sm btn-primary">
+                        <i class="bi bi-plus-circle"></i> New Request
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="text-center py-5">
+                        <i class="bi bi-inbox display-1 text-muted"></i>
+                        <p class="text-muted mt-3">No requests yet</p>
+                        <a href="{% url 'requests:create' %}" class="btn btn-primary">Create Your First Request</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'requests:create' %}" class="btn btn-outline-primary">
+                            <i class="bi bi-plus-circle"></i> Create Request
+                        </a>
+                        <a href="{% url 'agency:list' %}" class="btn btn-outline-secondary">
+                            <i class="bi bi-building"></i> Browse Agencies
+                        </a>
+                        <a href="{% url 'agents:dashboard' %}" class="btn btn-outline-info">
+                            <i class="bi bi-robot"></i> AI Agents
+                        </a>
+                        <a href="/admin/" class="btn btn-outline-dark">
+                            <i class="bi bi-gear"></i> Admin Panel
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            {% if user.enable_agent_assistance %}
+            <div class="card mt-3">
+                <div class="card-header bg-info text-white">
+                    <h6 class="mb-0"><i class="bi bi-robot"></i> AI Assistant Active</h6>
+                </div>
+                <div class="card-body">
+                    <p class="small mb-0">AI agents are monitoring your requests and will provide suggestions automatically.</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
