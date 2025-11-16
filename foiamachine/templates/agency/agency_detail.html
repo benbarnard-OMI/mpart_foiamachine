@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ agency.name }} - MPART FOIA Machine{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="mb-4">
+                <a href="{% url 'agency:list' %}" class="btn btn-outline-secondary mb-3">
+                    <i class="bi bi-arrow-left"></i> Back to Agencies
+                </a>
+                <h1>{{ agency.name }}</h1>
+                <span class="badge bg-secondary">{{ agency.get_level_display }}</span>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Agency Information</h5>
+                </div>
+                <div class="card-body">
+                    {% if agency.description %}
+                    <p>{{ agency.description }}</p>
+                    {% endif %}
+                    
+                    {% if agency.website %}
+                    <p><strong>Website:</strong> <a href="{{ agency.website }}" target="_blank">{{ agency.website }}</a></p>
+                    {% endif %}
+                    
+                    {% if agency.address %}
+                    <p><strong>Address:</strong><br>{{ agency.address|linebreaks }}</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">FOIA Information</h5>
+                </div>
+                <div class="card-body">
+                    {% if agency.foia_contact_email %}
+                    <p><strong>FOIA Email:</strong> <a href="mailto:{{ agency.foia_contact_email }}">{{ agency.foia_contact_email }}</a></p>
+                    {% endif %}
+                    
+                    {% if agency.foia_portal_url %}
+                    <p><strong>FOIA Portal:</strong> <a href="{{ agency.foia_portal_url }}" target="_blank">{{ agency.foia_portal_url }}</a></p>
+                    {% endif %}
+                    
+                    <p><strong>Average Response Time:</strong> {{ agency.average_response_days }} days</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid">
+                        <a href="{% url 'requests:create' %}" class="btn btn-primary mb-2">
+                            <i class="bi bi-plus-circle"></i> Submit Request to This Agency
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Contact Information</h5>
+                </div>
+                <div class="card-body">
+                    {% if agency.phone %}
+                    <p class="mb-2"><i class="bi bi-telephone"></i> {{ agency.phone }}</p>
+                    {% endif %}
+                    
+                    {% if agency.email %}
+                    <p class="mb-2"><i class="bi bi-envelope"></i> {{ agency.email }}</p>
+                    {% endif %}
+                    
+                    {% if agency.fax %}
+                    <p class="mb-0"><i class="bi bi-printer"></i> {{ agency.fax }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

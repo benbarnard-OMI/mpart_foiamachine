@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block title %}AI Agents Dashboard - MPART FOIA Machine{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1><i class="bi bi-robot"></i> AI Agents Dashboard</h1>
+            <p class="text-muted">Monitor and manage AI agent activities</p>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-list-task display-4 text-primary"></i>
+                    <h3 class="mt-2">{{ recent_tasks|length }}</h3>
+                    <p class="text-muted mb-0">Recent Tasks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-lightbulb display-4 text-warning"></i>
+                    <h3 class="mt-2">{{ pending_suggestions|length }}</h3>
+                    <p class="text-muted mb-0">Pending Suggestions</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-check-circle display-4 text-success"></i>
+                    <h3 class="mt-2">0</h3>
+                    <p class="text-muted mb-0">Completed Today</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-clock-history display-4 text-info"></i>
+                    <h3 class="mt-2">0</h3>
+                    <p class="text-muted mb-0">Processing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Recent Agent Tasks</h5>
+                </div>
+                <div class="card-body">
+                    {% if recent_tasks %}
+                        <div class="list-group">
+                            {% for task in recent_tasks %}
+                            <a href="{% url 'agents:task_detail' task.id %}" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">{{ task.get_task_type_display }}</h6>
+                                    <small class="text-muted">{{ task.created_at|timesince }} ago</small>
+                                </div>
+                                <p class="mb-1 small text-muted">
+                                    Status: <span class="badge bg-{{ task.status }}">{{ task.get_status_display }}</span>
+                                    {% if task.foia_request %}
+                                        | Request: {{ task.foia_request.title|truncatewords:5 }}
+                                    {% endif %}
+                                </p>
+                            </a>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="text-center py-4">
+                            <i class="bi bi-inbox display-4 text-muted"></i>
+                            <p class="text-muted mt-3">No agent tasks yet</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">Available Agents</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6><i class="bi bi-pencil"></i> Request Drafting Agent</h6>
+                        <p class="small text-muted mb-0">Drafts professional FOIA requests</p>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <h6><i class="bi bi-search"></i> Response Analysis Agent</h6>
+                        <p class="small text-muted mb-0">Analyzes agency responses</p>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
+                        <h6><i class="bi bi-envelope"></i> Follow-up Agent</h6>
+                        <p class="small text-muted mb-0">Generates follow-up communications</p>
+                    </div>
+                    <hr>
+                    <div class="mb-0">
+                        <h6><i class="bi bi-file-text"></i> Document Summary Agent</h6>
+                        <p class="small text-muted mb-0">Summarizes documents</p>
+                    </div>
+                </div>
+            </div>
+
+            {% if pending_suggestions %}
+            <div class="card mt-3">
+                <div class="card-header bg-warning">
+                    <h6 class="mb-0">Pending Suggestions</h6>
+                </div>
+                <div class="card-body">
+                    {% for suggestion in pending_suggestions %}
+                    <div class="mb-3">
+                        <p class="mb-1"><strong>{{ suggestion.title }}</strong></p>
+                        <p class="small text-muted">{{ suggestion.description|truncatewords:15 }}</p>
+                        <div class="btn-group btn-group-sm">
+                            <form method="post" action="{% url 'agents:accept_suggestion' suggestion.id %}" style="display:inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-success btn-sm">Accept</button>
+                            </form>
+                            <button class="btn btn-danger btn-sm" onclick="rejectSuggestion({{ suggestion.id }})">Reject</button>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function rejectSuggestion(id) {
+    if (confirm('Are you sure you want to reject this suggestion?')) {
+        fetch(`/agents/suggestions/${id}/reject/`, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+            }
+        }).then(() => location.reload());
+    }
+}
+</script>
+{% endblock %}

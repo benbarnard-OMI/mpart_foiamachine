@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Request Details - MPART FOIA Machine{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="d-flex justify-content-between align-items-start mb-4">
+                <div>
+                    <h1>{{ request.title }}</h1>
+                    <span class="badge bg-primary">{{ request.get_status_display }}</span>
+                    {% if request.agent_assisted %}
+                        <span class="badge bg-info"><i class="bi bi-robot"></i> AI-Assisted</span>
+                    {% endif %}
+                </div>
+                <a href="{% url 'requests:list' %}" class="btn btn-outline-secondary">Back to List</a>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Request Information</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Agency:</strong> {{ request.agency.name }}</p>
+                    <p><strong>Submitted:</strong> {{ request.submitted_date|date:"M d, Y" }}</p>
+                    <p><strong>Description:</strong> {{ request.description }}</p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Request Text</h5>
+                </div>
+                <div class="card-body">
+                    <pre class="mb-0">{{ request.request_body }}</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary">Submit Request</button>
+                        <button class="btn btn-outline-secondary">Add Communication</button>
+                        <button class="btn btn-outline-info">
+                            <i class="bi bi-robot"></i> Analyze with AI
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Timeline</h5>
+                </div>
+                <div class="card-body">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <i class="bi bi-circle-fill text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-0 small"><strong>Created</strong></p>
+                                <p class="text-muted small mb-0">{{ request.created_at|date:"M d, Y H:i" }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

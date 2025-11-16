@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}My Requests - MPART FOIA Machine{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row mb-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <h1>My FOIA Requests</h1>
+            <a href="{% url 'requests:create' %}" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> New Request
+            </a>
+        </div>
+    </div>
+
+    {% if requests %}
+        <div class="row">
+            {% for request in requests %}
+            <div class="col-md-6 mb-3">
+                <div class="card card-hover">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title">{{ request.title }}</h5>
+                            <span class="badge bg-{{ request.status }}">{{ request.get_status_display }}</span>
+                        </div>
+                        <p class="card-text text-muted small">{{ request.description|truncatewords:20 }}</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="bi bi-building"></i> {{ request.agency.name }}<br>
+                                <i class="bi bi-calendar"></i> {{ request.created_at|date:"M d, Y" }}
+                                {% if request.agent_assisted %}
+                                    <br><i class="bi bi-robot text-info"></i> AI-Assisted
+                                {% endif %}
+                            </small>
+                        </p>
+                        <a href="{% url 'requests:detail' request.pk %}" class="btn btn-sm btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="card">
+            <div class="card-body text-center py-5">
+                <i class="bi bi-inbox display-1 text-muted"></i>
+                <h3 class="mt-3">No Requests Yet</h3>
+                <p class="text-muted">Get started by creating your first FOIA request</p>
+                <a href="{% url 'requests:create' %}" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Create Your First Request
+                </a>
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
