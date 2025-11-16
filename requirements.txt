@@ -1,6 +1,6 @@
 # Core Django and Web Framework
-Django==4.2.11
-gunicorn==21.2.0
+Django==4.2.24
+gunicorn==22.0.0
 whitenoise==6.6.0
 
 # Database
@@ -32,7 +32,7 @@ django-anymail==10.2
 
 # File Handling
 python-magic==0.4.27
-Pillow==10.2.0
+Pillow==10.3.0
 
 # Utilities
 python-dotenv==1.0.1
