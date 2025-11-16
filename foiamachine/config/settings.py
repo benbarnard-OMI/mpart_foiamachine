@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # Local apps
     'foiamachine.apps.core',
     'foiamachine.apps.users',
+    'foiamachine.apps.government',  # Government and statutes
     'foiamachine.apps.agency',
     'foiamachine.apps.requests',
     'foiamachine.apps.contacts',

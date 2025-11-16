@@ -27,17 +27,17 @@ class AdminName(BaseData):
         return self.name
 
 class Update(BaseData):
-    author = models.ForeignKey(User)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     pubbed = models.DateTimeField(null=True)
     headline = models.CharField(max_length=1024, default="The latest")
     text = models.TextField()
 
 class FeeExemptionOtherManager(models.Manager):
     def all_them(self):
-        return super(FeeExemptionOtherManager, self).get_query_set()
+        return super(FeeExemptionOtherManager, self).get_queryset()
 
-    def get_query_set(self):
-        return super(FeeExemptionOtherManager, self).get_query_set().filter(deprecated__isnull=True)
+    def get_queryset(self):
+        return super(FeeExemptionOtherManager, self).get_queryset().filter(deprecated__isnull=True)
 
 class FeeExemptionOther(BaseData):
     statute_relation_types = (
@@ -76,12 +76,12 @@ class FeeExemptionOther(BaseData):
 class Nation(BaseData):
     name = models.CharField(max_length=255)
     slug = AutoSlugField(populate_from=('name', ), overwrite=False)
-    primary_language = models.ForeignKey(Language, related_name='primary_language_nations', blank=True, null=True)
-    foi_languages = models.ManyToManyField(Language, blank=True, null=True)
-    admin_0_name = models.ForeignKey(AdminName, null=True, blank=True, related_name='admin_0_nations')
-    admin_1_name = models.ForeignKey(AdminName, null=True, blank=True, related_name='admin_1_nations')
-    admin_2_name = models.ForeignKey(AdminName, null=True, blank=True, related_name='admin_2_nations')
-    admin_3_name = models.ForeignKey(AdminName, null=True, blank=True, related_name='admin_3_nations')
+    primary_language = models.ForeignKey(Language, related_name='primary_language_nations', blank=True, null=True, on_delete=models.SET_NULL)
+    foi_languages = models.ManyToManyField(Language, blank=True)
+    admin_0_name = models.ForeignKey(AdminName, null=True, blank=True, related_name='admin_0_nations', on_delete=models.SET_NULL)
+    admin_1_name = models.ForeignKey(AdminName, null=True, blank=True, related_name='admin_1_nations', on_delete=models.SET_NULL)
+    admin_2_name = models.ForeignKey(AdminName, null=True, blank=True, related_name='admin_2_nations', on_delete=models.SET_NULL)
+    admin_3_name = models.ForeignKey(AdminName, null=True, blank=True, related_name='admin_3_nations', on_delete=models.SET_NULL)
 
 
     class Meta:
@@ -93,10 +93,10 @@ class Nation(BaseData):
 
 class StatuteManager(models.Manager):
     def all_them(self):
-        return super(StatuteManager, self).get_query_set()
+        return super(StatuteManager, self).get_queryset()
 
-    def get_query_set(self):
-        return super(StatuteManager, self).get_query_set().filter(deprecated__isnull=True)
+    def get_queryset(self):
+        return super(StatuteManager, self).get_queryset().filter(deprecated__isnull=True)
 
 
 class Statute(BaseData):
@@ -105,15 +105,35 @@ class Statute(BaseData):
     text = models.TextField(blank=True,null=True)
     days_till_due = models.IntegerField(default=-1)
     slug = AutoSlugField(populate_from=('short_title', ), overwrite=False)
-    fees_exemptions = models.ManyToManyField(FeeExemptionOther, null=True, blank=True)
-    updates = models.ManyToManyField(Update, null=True, blank=True)
+    fees_exemptions = models.ManyToManyField(FeeExemptionOther, blank=True)
+    updates = models.ManyToManyField(Update, blank=True)
     #deleted = models.BooleanField(default = False)
     objects = StatuteManager()
+    
+    # Enhanced response time fields
+    response_time_days = models.IntegerField(null=True, blank=True, help_text="Specific response time in days")
+    response_time_type = models.CharField(
+        max_length=20, 
+        choices=[
+            ('specific', 'Specific number of days'),
+            ('prompt', 'Prompt response required'),
+            ('reasonable', 'Reasonable time'),
+            ('none', 'No specific limit'),
+        ],
+        default='specific',
+        help_text="Type of response time requirement"
+    )
+    residency_required = models.BooleanField(default=False, help_text="Whether state residency is required")
+    fee_structure = models.TextField(blank=True, null=True, help_text="Fee information (JSON format)")
+    exemptions = models.TextField(blank=True, null=True, help_text="Common exemptions (JSON format)")
 
     
     class Meta:
         verbose_name_plural = 'Statutes'
 
+    def __str__(self):
+        return self.short_title
+    
     def __unicode__(self):
         return self.short_title
 
@@ -149,8 +169,8 @@ class Holiday(BaseData):
 
 
 class GovernmentManager(models.Manager):
-    def get_query_set(self):
-        return super(GovernmentManager, self).get_query_set().filter(deprecated__isnull=True)
+    def get_queryset(self):
+        return super(GovernmentManager, self).get_queryset().filter(deprecated__isnull=True)
 
 class Government(BaseData):
     GOV_LEVELS = (
@@ -164,8 +184,8 @@ class Government(BaseData):
     name = models.CharField(max_length=255)
     slug = AutoSlugField(populate_from=('name', ), overwrite=False)
     level = models.CharField(max_length=1, choices=GOV_LEVELS)
-    nation = models.ForeignKey(Nation, null=True, blank=True)
-    statutes = models.ManyToManyField(Statute, null=True, blank=True, related_name='related_statutes')
+    nation = models.ForeignKey(Nation, null=True, blank=True, on_delete=models.SET_NULL)
+    statutes = models.ManyToManyField(Statute, blank=True, related_name='related_statutes')
     #deleted = models.BooleanField(default = False)
     holidays = models.ManyToManyField(Holiday, null=True, blank=True)
     objects = GovernmentManager()

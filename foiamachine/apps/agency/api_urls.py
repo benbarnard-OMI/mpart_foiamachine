@@ -2,10 +2,15 @@
 Agency API URLs
 """
 
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from apps.agency.api_views import AgencyViewSet
+
+router = DefaultRouter()
+router.register(r'agencies', AgencyViewSet, basename='agency')
 
 app_name = 'agency_api'
 
 urlpatterns = [
-    # API endpoints will be added here
+    path('', include(router.urls)),
 ]

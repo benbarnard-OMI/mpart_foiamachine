@@ -11,6 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('api/', include('foiamachine.apps.core.api_urls')),
+    path('api/agencies/', include('foiamachine.apps.agency.api_urls')),  # Agency API endpoints
     path('requests/', include('foiamachine.apps.requests.urls')),
     path('agencies/', include('foiamachine.apps.agency.urls')),
     path('contacts/', include('foiamachine.apps.contacts.urls')),
