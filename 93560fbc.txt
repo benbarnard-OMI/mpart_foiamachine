@@ -1,0 +1,314 @@
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                 MEDICAID FOIA QUICK REFERENCE GUIDE                        ║
+║              State-by-State Response Time & Key Requirements               ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════
+I. FASTEST RESPONSE STATES (2-3 Days)
+═══════════════════════════════════════════════════════════════════════════════
+Vermont             2-3 days    Any person
+Arkansas            3 days      ⚠ Residents only
+Georgia             3 days      Any person
+Kansas              3 days      Any person
+Louisiana           3 days      Any person
+Missouri            3 days      Any person
+
+═══════════════════════════════════════════════════════════════════════════════
+II. STANDARD RESPONSE STATES (5-7 Days)
+═══════════════════════════════════════════════════════════════════════════════
+Connecticut         4 days      Any person
+Illinois            5 days      Any person (21 days commercial)
+Kentucky            5 days      Any person
+Maine               5 days      Any person
+Nevada              5 days      Any person
+New Hampshire       5 days      ⚠ Residents only
+New York            5 days      Any person
+Pennsylvania        5 days      Any person
+Virginia            5 days      ⚠ Residents only (can extend to 12)
+West Virginia       5 days      Any person
+
+Indiana             7 days      Any person
+Mississippi         7 days      Any person
+New Jersey          7 days      ⚠ Residents only
+Tennessee           7 days      ⚠ Residents only
+
+═══════════════════════════════════════════════════════════════════════════════
+III. MODERATE RESPONSE STATES (10-15 Days)
+═══════════════════════════════════════════════════════════════════════════════
+Alaska              10 days     Any person
+California          10 days     Any person (14 for unusual circumstances)
+Hawaii              10 days     Any person
+Idaho               10 days     Any person
+Massachusetts       10 days     Any person
+Rhode Island        10 days     Any person (can extend 20 more)
+Texas               10 days     Any person
+Utah                10 days     Any person
+
+Delaware            15 days     ⚠ Residents only (out-of-state case-by-case)
+New Mexico          15 days     Any person
+South Carolina      10-15 days  Any person (15 if records >24 months old)
+South Dakota        15 days     Any person
+
+═══════════════════════════════════════════════════════════════════════════════
+IV. LONGER RESPONSE STATES (20-30 Days)
+═══════════════════════════════════════════════════════════════════════════════
+DC                  15 days     Any person
+Iowa                20 days     Any person
+Maryland            30 days     Any person (LONGEST IN NATION)
+
+═══════════════════════════════════════════════════════════════════════════════
+V. "PROMPT" RESPONSE STATES (No Specific Timeline)
+═══════════════════════════════════════════════════════════════════════════════
+Alabama             Prompt      ⚠ Residents only
+Arizona             Prompt      Any person
+Colorado            3-7 days    Any person (CORA)
+Florida             Prompt      Any person
+Michigan            Prompt      Any person (except incarcerated)
+Minnesota           Reasonable  Any person
+Montana             No limit    Any person
+North Carolina      No limit    Any person
+North Dakota        No limit    Any person
+Ohio                Prompt      Any person
+Oklahoma            Prompt      Any person
+Oregon              Prompt      Any person
+Washington          Prompt      Any person
+Wisconsin           Prompt      Any person
+Wyoming             No limit    Any person (up to 30 days typical)
+
+═══════════════════════════════════════════════════════════════════════════════
+VI. RESIDENCY REQUIREMENTS - ONLY 8 STATES RESTRICT
+═══════════════════════════════════════════════════════════════════════════════
+⚠ Alabama          - Must be AL resident
+⚠ Arkansas         - Must be AR resident  
+⚠ Delaware         - Must be DE resident (out-of-state case-by-case)
+⚠ Georgia          - Must be GA resident
+⚠ New Hampshire    - Must be NH resident
+⚠ New Jersey       - Must be NJ resident
+⚠ Tennessee        - Must be TN resident
+⚠ Virginia         - Must be VA resident
+
+ALL OTHER 42 STATES + DC: Any person can request records
+
+═══════════════════════════════════════════════════════════════════════════════
+VII. KEY CONTACT METHODS
+═══════════════════════════════════════════════════════════════════════════════
+Most Common:        ✓ Email (fastest)
+                    ✓ Online portal/web form
+                    ✓ US Mail
+                    ✓ Fax
+                    ✓ Hand delivery
+
+Requirement:        ALL requests must be in WRITING
+                    Verbal requests NOT accepted
+
+═══════════════════════════════════════════════════════════════════════════════
+VIII. TYPICAL FEE STRUCTURE
+═══════════════════════════════════════════════════════════════════════════════
+Search/Retrieval:   $15-$40 per hour
+Copying:            $0.10-$0.25 per page
+Electronic:         $5-$10 per CD/DVD
+Redaction:          $15-$40 per hour
+Certification:      Varies by state
+
+Fee Waivers:        Available in some states for:
+                    - Public interest requests
+                    - Non-commercial use
+                    - Media/academic research
+
+═══════════════════════════════════════════════════════════════════════════════
+IX. REQUIRED INFORMATION IN REQUEST
+═══════════════════════════════════════════════════════════════════════════════
+✓ Your name
+✓ Contact information (address, email, phone)
+✓ Specific description of records requested
+✓ Statement citing state's open records law
+✓ Signature (if mailing)
+✓ Commercial purpose disclosure (if applicable)
+
+SPECIFICITY MATTERS:
+❌ BAD:  "All records about Medicaid"
+✓ GOOD: "Fee schedule for CPT codes 99201-99215 effective Jan 2025"
+
+═══════════════════════════════════════════════════════════════════════════════
+X. COMMON EXEMPTIONS (CANNOT REQUEST)
+═══════════════════════════════════════════════════════════════════════════════
+✗ Individual patient medical records (HIPAA)
+✗ Personal identifiable information (SSN, addresses)
+✗ Ongoing criminal investigations
+✗ Trade secrets/proprietary business info
+✗ Attorney-client privileged communications
+✗ Draft internal deliberative documents
+✗ Information closed by federal law
+
+✓ Can request de-identified aggregate data
+✓ Can request with proper authorization/court order
+
+═══════════════════════════════════════════════════════════════════════════════
+XI. IF YOUR REQUEST IS DENIED
+═══════════════════════════════════════════════════════════════════════════════
+Step 1: Administrative Appeal
+        - File with agency (typically 30-60 days)
+        - Address appeal to agency head
+
+Step 2: State FOIA Commission/Ombudsman (if available)
+        - Free, informal resolution
+        - Examples: IL Public Access Counselor, CT FOIA Commission
+
+Step 3: Judicial Review
+        - File lawsuit in state court
+        - May recover attorney fees if you win
+        - Agencies may face civil penalties
+
+PENALTIES FOR NON-COMPLIANCE:
+Illinois:        $2,500-$5,000 per violation
+Michigan:        $2,500-$7,500 per violation  
+Virginia:        $1,000-$2,500 per violation
+Pennsylvania:    Up to $1,500 per violation
+
+═══════════════════════════════════════════════════════════════════════════════
+XII. FEDERAL VS. STATE MEDICAID FOIA
+═══════════════════════════════════════════════════════════════════════════════
+CMS (Federal):
+- Use Federal FOIA (5 U.S.C. § 552)
+- 20 working days response time
+- Phone: (410) 786-5353
+- Email: FOIA_Request@cms.hhs.gov
+- Website: FOIA.gov portal
+
+State Medicaid Agencies:
+- Use STATE open records law
+- Response time: 2-30 days (varies by state)
+- Contact: State-specific FOIA officer
+- See main spreadsheet for contacts
+
+═══════════════════════════════════════════════════════════════════════════════
+XIII. USEFUL RECORDS YOU CAN REQUEST
+═══════════════════════════════════════════════════════════════════════════════
+✓ State Plan Amendments (SPAs)
+✓ Waiver applications and approvals
+✓ Provider directories and enrollment lists
+✓ Fee schedules and reimbursement rates
+✓ Policy manuals and bulletins
+✓ Managed care contracts (executed)
+✓ Administrative rules and regulations
+✓ Aggregate utilization statistics (de-identified)
+✓ Program expenditure reports
+✓ Prior authorization criteria
+
+═══════════════════════════════════════════════════════════════════════════════
+XIV. BEST PRACTICES
+═══════════════════════════════════════════════════════════════════════════════
+Before Submitting:
+□ Check if records are already public on agency website
+□ Call FOIA officer to confirm records exist
+□ Review agency's FOIA procedures and fee schedule
+□ Define specific time period and document types
+
+Drafting Request:
+□ Be specific - name documents/dates if possible
+□ Request electronic format (cheaper, faster)
+□ Ask for fee estimate if large request
+□ Provide multiple contact methods
+□ Cite correct state statute
+
+After Submitting:
+□ Keep copies of all correspondence
+□ Note submission date and tracking number
+□ Follow up if no response by deadline
+□ Document any phone conversations
+□ Track appeal deadlines (usually 30-60 days)
+
+═══════════════════════════════════════════════════════════════════════════════
+XV. U.S. TERRITORIES - SPECIAL NOTES
+═══════════════════════════════════════════════════════════════════════════════
+Puerto Rico, USVI, Guam, American Samoa, Northern Mariana Islands:
+
+• Capped federal Medicaid funding (unlike states)
+• FMAP: 76% (Puerto Rico) or 83% (others)
+• May need to contact CMS Regional Office for federal records
+• Follow local territory laws, not federal FOIA
+• Response times vary - contact CMS regions:
+  - Region 2 (PR, USVI): (212) 616-2519
+  - Region 9 (Guam, AS, CNMI): (415) 744-3731
+
+═══════════════════════════════════════════════════════════════════════════════
+XVI. ILLINOIS-SPECIFIC NOTES (Since You're in Springfield)
+═══════════════════════════════════════════════════════════════════════════════
+Agency:         Illinois Department of Healthcare and Family Services (HFS)
+FOIA Officer:   Kiran Mehta
+Address:        201 S. Grand Ave. E., 3rd Floor, Springfield, IL 62763
+Phone:          (217) 557-4257
+Fax:            (217) 524-2397
+Email:          Kiran.Mehta@Illinois.gov
+
+Response Time:  5 business days (can extend 5 more)
+                21 business days for commercial requests
+
+Key Features:
+• Strong FOIA law with significant penalties ($2,500-$5,000)
+• Public Access Counselor (PAC) provides free mediation
+• If agency doesn't respond in 5 days, copies are FREE
+• Must disclose if commercial purpose
+• Can appeal to PAC within 60 days
+
+Illinois PAC:   (217) 782-1396 / publicaccess@ilattorneygeneral.net
+
+═══════════════════════════════════════════════════════════════════════════════
+XVII. CRITICAL REMINDERS
+═══════════════════════════════════════════════════════════════════════════════
+✓ All requests must be in WRITING - no verbal requests accepted
+✓ Check residency requirements - 8 states require state residency
+✓ Be specific - vague requests will be denied or delayed
+✓ Budget for fees - large requests can cost hundreds of dollars
+✓ Know deadlines - response times vary from 2-30 days by state
+✓ Appeal if denied - you have 30-60 days (varies by state)
+✓ Use electronic format - faster and cheaper than paper
+✓ Check online first - many records publicly available
+
+✗ Cannot request individual patient records without authorization
+✗ Cannot make overly broad requests ("all records")
+✗ Cannot miss appeal deadlines - strictly enforced
+✗ Cannot assume federal FOIA applies to state agencies
+
+═══════════════════════════════════════════════════════════════════════════════
+XVIII. QUICK DECISION TREE
+═══════════════════════════════════════════════════════════════════════════════
+                    Do you need Medicaid records?
+                              |
+                              v
+            ┌─────────────────┴─────────────────┐
+            |                                   |
+        Federal records                    State records
+     (CMS oversight, etc.)               (provider data, etc.)
+            |                                   |
+            v                                   v
+    Use Federal FOIA                   Use STATE open records law
+    Contact: CMS                       Contact: State Medicaid agency
+    Phone: (410) 786-5353              (See spreadsheet for contacts)
+    Time: 20 working days              Time: 2-30 days (varies by state)
+
+═══════════════════════════════════════════════════════════════════════════════
+XIX. ADDITIONAL RESOURCES
+═══════════════════════════════════════════════════════════════════════════════
+Federal:
+• CMS FOIA Office: (410) 786-5353
+• FOIA.gov: Federal FOIA portal
+• HHS FOIA: FOIARequest@hhs.gov
+
+State Resources:
+• State Attorney General FOIA guidance (each state)
+• National Freedom of Information Coalition: www.nfoic.org
+• Reporters Committee for Freedom of the Press: www.rcfp.org
+
+Organizations:
+• National Association of Medicaid Directors: medicaiddirectors.org
+• MACPAC (Medicaid policy commission): www.macpac.gov
+
+═══════════════════════════════════════════════════════════════════════════════
+
+For complete details, see:
+• State_Medicaid_FOIA_Contacts_Comprehensive.csv (main contact database)
+• Medicaid_FOIA_Legal_Guide.txt (detailed legal guidance)
+
+Document Version: 1.0 | November 2025

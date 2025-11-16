@@ -1,0 +1,517 @@
+
+# SUPPLEMENTARY LEGAL GUIDANCE FOR MEDICAID FOIA REQUESTS
+## Comprehensive Guide to Submitting Freedom of Information Requests to State Medicaid Programs
+
+### OVERVIEW
+This document provides essential legal considerations, procedural requirements, and best practices when submitting FOIA requests to state Medicaid agencies across the United States.
+
+---
+
+## I. GENERAL LEGAL FRAMEWORK
+
+### Federal vs. State FOIA Laws
+- **Federal FOIA (5 U.S.C. § 552)**: Applies to federal agencies including CMS (Centers for Medicare & Medicaid Services)
+- **State FOIA Laws**: Each state has its own open records/public records law with varying names, procedures, and timelines
+- **State Medicaid Programs**: Administered by state agencies, subject to STATE FOIA laws, not federal FOIA
+
+### Important Distinction
+When requesting records from:
+- **CMS (federal)**: Use federal FOIA, 20 working days response time
+- **State Medicaid Agency**: Use state's open records law, response times vary by state (2-30 days)
+
+---
+
+## II. STATUTORY RESPONSE TIMES BY STATE (Summary)
+
+### Fastest Response Times (2-3 days):
+- **Vermont**: 2-3 days (fastest in nation)
+- **Arkansas, Georgia, Kansas, Kentucky, Louisiana, Missouri**: 3 days
+
+### Standard Response Times (5-7 days):
+- **Most states**: 5-7 business days
+- **Illinois, Nevada, New Hampshire, New York, Pennsylvania, Virginia, West Virginia**: 5 days
+- **Indiana, Mississippi, New Jersey, Tennessee**: 7 days
+
+### Longer Response Times:
+- **California**: 10 days (14 for unusual circumstances)
+- **Alaska, Hawaii, Idaho, Massachusetts, Rhode Island, Texas, Utah**: 10 days
+- **Delaware, New Mexico, South Carolina, South Dakota**: 15 days
+- **Iowa**: 20 days
+- **Maryland**: 30 days (longest in nation)
+
+### No Specific Deadline:
+- **Alabama, Arizona, Colorado, Florida, Michigan, Minnesota, Montana, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Washington, Wisconsin, Wyoming**: "Prompt" or "reasonable" response required
+
+---
+
+## III. RESIDENCY REQUIREMENTS
+
+### States Requiring Residency:
+Only **8 states** restrict FOIA requests to residents:
+1. Alabama
+2. Arkansas
+3. Delaware
+4. Georgia
+5. New Hampshire
+6. New Jersey
+7. Tennessee
+8. Virginia
+
+**Note**: Out-of-state requesters may be denied or subject to different procedures in these states.
+
+### All Other States: 
+42 states + DC allow "any person" to make requests regardless of citizenship or residency.
+
+---
+
+## IV. KEY PROCEDURAL REQUIREMENTS
+
+### 1. Written Requests
+**ALL states require written requests**. Verbal requests are not accepted.
+
+Acceptable methods:
+- Email (most common and fastest)
+- Online portal/web form (increasingly common)
+- US Mail
+- Fax
+- Hand delivery
+
+### 2. Required Information in Request
+Most states require:
+- ✓ Your name
+- ✓ Contact information (address, phone, email)
+- ✓ Specific description of records sought
+- ✓ Statement that request is made under state's open records law
+- ✓ Signature (if not submitted electronically)
+
+### 3. Specificity Requirements
+**Be as specific as possible:**
+- ✗ BAD: "All records related to Medicaid"
+- ✓ GOOD: "Provider enrollment records for ABC Medical Group from January 2023 to December 2023"
+- ✓ GOOD: "Fee schedule for CPT code 99213 effective in 2024"
+- ✓ GOOD: "State Plan Amendment documents submitted between March 2024 and June 2024"
+
+**Overly broad requests** may be:
+- Denied as unduly burdensome
+- Subject to higher fees
+- Result in longer response times
+
+---
+
+## V. FEE STRUCTURES AND COSTS
+
+### Common Fee Components:
+1. **Search/Retrieval Fees**: $15-$40/hour (staff time to locate records)
+2. **Copying Fees**: $0.10-$0.25 per page
+3. **Electronic Records**: Varies, often $5-$10 per CD/DVD
+4. **Redaction Fees**: $15-$40/hour for removing exempt information
+5. **Certification Fees**: If certified copies are needed
+
+### Fee Waivers
+Some states allow fee waivers if:
+- Request serves public interest
+- Not primarily for commercial purpose
+- Requester is media/academic researcher (varies by state)
+
+### Cost Management Tips:
+- **Specify format preference**: Electronic copies (PDF) usually cheaper than paper
+- **Request fee estimate** before proceeding with large requests
+- **Negotiate scope** if costs are prohibitive
+- **Ask for first 100 pages free** (some states, like Kansas, provide this)
+
+---
+
+## VI. EXTENSION OF DEADLINES
+
+Most states allow agencies to extend response deadlines under certain circumstances:
+
+### Common Reasons for Extension:
+- Records stored at multiple locations
+- Large volume of records requiring collection
+- Need to locate archived records
+- Consultation with other agencies required
+- Legal review needed for exemption determination
+
+### Typical Extension Periods:
+- **Illinois**: Additional 5 business days (total 10 days)
+- **Virginia**: Additional 7 business days (total 12 days)
+- **Rhode Island**: Additional 20 business days for "good cause"
+- **California**: Additional 4 days for unusual circumstances (total 14 days)
+
+### Requirements:
+- Agency must notify you in writing
+- Must provide reason for extension
+- Must provide new estimated completion date
+
+---
+
+## VII. EXEMPTIONS FROM DISCLOSURE
+
+### Commonly Exempt Records (Varies by State):
+
+**1. Protected Health Information (PHI)**
+- Individual patient medical records (HIPAA protected)
+- Requires patient authorization or court order
+
+**2. Personally Identifiable Information (PII)**
+- Social Security numbers
+- Individual financial information
+- Home addresses of private individuals
+
+**3. Trade Secrets & Commercial Information**
+- Proprietary business information
+- Pricing negotiations
+- Contract bid information (until awarded)
+
+**4. Ongoing Investigations**
+- Active fraud investigations
+- Criminal enforcement proceedings
+- Under litigation privilege
+
+**5. Deliberative Process**
+- Internal agency deliberations
+- Draft documents
+- Attorney-client communications
+
+**6. Information Closed by Other Statutes**
+- Federal tax return information (26 U.S.C. § 6103)
+- Medicaid eligibility system information (42 CFR § 431.300)
+
+### Partial Disclosure:
+If only portion of record is exempt, agencies must:
+- Redact (black out) exempt information
+- Provide remainder of record
+- Explain what was redacted and legal basis
+
+---
+
+## VIII. COMMERCIAL PURPOSE REQUESTS
+
+### Definition:
+Request made for purpose of:
+- Soliciting sales to persons listed
+- Compiling mailing lists for marketing
+- Commercial resale of information
+
+### Special Rules (Varies by State):
+- **Illinois**: 21 business days (vs. 5 days for non-commercial)
+- **Many states**: Higher fees for commercial requests
+- **Some states**: Require disclosure of commercial purpose
+- **Violation**: Failing to disclose commercial purpose may be illegal (e.g., Illinois Class B misdemeanor)
+
+---
+
+## IX. RECURRENT REQUESTER PROVISIONS
+
+Some states have special procedures for "recurrent requesters":
+
+### Definition (Example from Illinois):
+Person or entity that has submitted >50 requests to same agency in a 12-month period
+
+### Consequences:
+- Different response timelines
+- May be required to pay fees upfront
+- Agency may require deposit before processing
+
+---
+
+## X. APPEALS AND ENFORCEMENT
+
+### If Request is Denied or Ignored:
+
+**Step 1: Administrative Appeal**
+- Most states have internal appeal process
+- Typically 30-60 days to file appeal after denial
+- Appeal to agency head or designated official
+
+**Step 2: State FOIA Commission/Officer** (if available)
+- **Illinois**: Public Access Counselor (PAC)
+- **Connecticut, Maine, PA**: FOIA Commissions
+- Usually free, informal resolution process
+
+**Step 3: Judicial Review**
+- File lawsuit in state court
+- May recover attorney's fees if you prevail
+- Court may impose civil penalties on agency
+
+### Penalties for Non-Compliance:
+- **Illinois**: $2,500-$5,000 per violation
+- **Virginia**: $1,000 first offense, $2,500 subsequent
+- **Michigan**: $2,500-$7,500 per violation
+- **South Carolina**: Up to $500 per violation
+
+### Timeline for Appeals:
+- **Varies by state**: 30-60 days from denial
+- **Don't delay**: Deadlines are strictly enforced
+
+---
+
+## XI. SPECIFIC MEDICAID DATA CONSIDERATIONS
+
+### Types of Records Commonly Requested:
+
+**1. Provider Data**
+- ✓ Provider enrollment/participation lists
+- ✓ Fee schedules and reimbursement rates
+- ✓ Prior authorization requirements
+- ✓ Provider manuals and billing guides
+- ✗ Individual provider financial data (may be exempt)
+
+**2. Policy Documents**
+- ✓ State Plan Amendments (SPAs)
+- ✓ Waiver applications and approvals
+- ✓ Policy transmittals and bulletins
+- ✓ Administrative rules and regulations
+
+**3. Claims Data**
+- ✓ Aggregate utilization data (de-identified)
+- ✓ Program expenditure reports
+- ✗ Individual beneficiary claims (HIPAA protected)
+
+**4. Contract Information**
+- ✓ Managed care contracts (after execution)
+- ✓ Vendor contracts
+- ✗ Ongoing contract negotiations (may be exempt)
+
+### Important Data Limitations:
+
+**Federal vs. State Records:**
+- **CMS holds**: Federal oversight records, waiver approvals, federal matching payments
+- **State holds**: State plan documents, provider files, state-specific policies
+- **May need BOTH**: Comprehensive information may require requests to both CMS and state
+
+**HIPAA Considerations:**
+- **Cannot obtain**: Individual patient records without authorization
+- **Can obtain**: De-identified aggregate data
+- **Medicaid Authorization Form**: Required for personal health information requests
+
+**Third-Party Liability (TPL):**
+- If requesting data related to settlements/injury claims
+- May need specific authorization
+- Contact state's TPL unit directly
+
+---
+
+## XII. BEST PRACTICES FOR SUCCESSFUL REQUESTS
+
+### Before Submitting:
+
+**1. Research Available Public Data**
+Many states publish commonly requested information online:
+- Provider directories
+- Fee schedules
+- State Plan Amendments
+- Managed care contracts
+- Statistical reports
+
+**2. Contact Agency Informally**
+- Call and ask if records exist
+- Clarify scope with FOIA officer
+- May receive information without formal request
+
+**3. Review Agency FOIA Policies**
+- Check agency website for FOIA procedures
+- Review fee schedule
+- Note any special forms or requirements
+
+### Drafting Your Request:
+
+**1. Use Clear, Specific Language**
+- Identify specific documents by name/date if possible
+- Define time periods narrowly
+- Specify format preference (electronic vs. paper)
+
+**2. Provide Context (Optional but Helpful)**
+- Explain purpose if it may expedite processing
+- Indicate if time-sensitive
+- Request fee waiver if applicable
+
+**3. Include Contact Information**
+- Provide multiple ways to reach you
+- Include email for fastest communication
+- Provide phone number for questions
+
+### Example Strong Request:
+```
+[Date]
+[State Medicaid Agency]
+FOIA Officer
+[Address]
+
+Re: Freedom of Information Request under [State] Open Records Act
+
+Dear FOIA Officer:
+
+This is a request under the [State] Open Records Act for the following records:
+
+1. All State Plan Amendment (SPA) documents submitted to CMS between January 1, 2024, and June 30, 2024, including the SPA cover pages, narrative descriptions, and CMS approval letters.
+
+2. The current Medicaid fee schedule for physician services (CPT codes 99201-99215) effective as of January 1, 2025.
+
+3. Any contracts with managed care organizations for the Medicaid managed care program executed in calendar year 2024.
+
+I request these records in electronic format (PDF) to minimize costs. If fees for this request will exceed $100, please contact me before processing to discuss narrowing the scope.
+
+I can be reached at:
+Email: [your email]
+Phone: [your phone]
+Address: [your address]
+
+Thank you for your attention to this request. I look forward to your response within [state-specific timeframe] as required by law.
+
+Sincerely,
+[Your Name]
+[Signature]
+```
+
+---
+
+## XIII. SPECIAL CONSIDERATIONS FOR TERRITORIES
+
+### U.S. Territories (Puerto Rico, USVI, Guam, American Samoa, CNMI):
+
+**Key Differences:**
+- Capped federal Medicaid funding (unlike states)
+- FMAP rates: 76% (PR) or 83% (others) vs. state range of 50-78%
+- May operate under waivers with different benefit requirements
+- Limited local funding may affect record-keeping capacity
+
+**FOIA Procedures:**
+- Follow local territory laws (not federal FOIA)
+- May need to contact CMS Regional Office for federal records
+- CMS Regional contacts provided in main spreadsheet
+
+**Challenges:**
+- Fewer resources for FOIA compliance
+- May take longer to process requests
+- Some territories have limited electronic systems
+
+---
+
+## XIV. CONTACT INFORMATION FOR ASSISTANCE
+
+### Federal Level:
+**CMS FOIA Office**
+- Phone: (410) 786-5353
+- Fax: (443) 380-7260
+- Email: FOIA_Request@cms.hhs.gov
+- Online: FOIA.gov portal
+
+**CMS Regional Offices**
+See main spreadsheet for region-specific contacts
+
+### State Level:
+**State FOIA Officers/Commissions**
+- Illinois Public Access Counselor: (217) 782-1396
+- Connecticut FOIA Commission: (860) 566-5682
+- Check your state's Attorney General office
+
+### Professional Associations:
+**National Association of Medicaid Directors (NAMD)**
+- Website: medicaiddirectors.org
+- Directory of state Medicaid directors
+
+---
+
+## XV. TIMELINE AND TRACKING TIPS
+
+### Tracking Your Request:
+
+**1. Document Everything**
+- Keep copies of all correspondence
+- Note submission date and method
+- Record any communication with agency
+- Track deadlines for responses and appeals
+
+**2. Follow Up**
+- If no response by deadline, follow up in writing
+- Reference original request date and control number
+- Request status update
+
+**3. Control Numbers**
+- Many agencies assign tracking numbers
+- Use this number in all future communication
+- Some states have online portals to check status
+
+### Expected Timeline Example:
+```
+Day 0: Submit request
+Day 1-5: Agency acknowledgment (varies by state)
+Day 5-30: Initial response (varies by state)
+Day 30-60: Appeal period (if denied)
+Day 60-90: Agency response to appeal
+Day 90+: Judicial review (if necessary)
+```
+
+---
+
+## XVI. IMPORTANT REMINDERS
+
+✓ **Check residency requirements** - 8 states require state residency
+✓ **Be specific** - Vague requests may be denied as unduly burdensome
+✓ **Budget for fees** - Large requests can be expensive
+✓ **Know your deadlines** - State response times vary from 2-30 days
+✓ **Understand exemptions** - Not all records are subject to disclosure
+✓ **Appeal if denied** - You have rights to appeal denials
+✓ **Use electronic format** - Usually faster and cheaper
+✓ **Check online first** - Many records already publicly available
+
+✗ **Don't request PHI without authorization** - HIPAA protects patient records
+✗ **Don't make overly broad requests** - Will result in delays and high costs
+✗ **Don't miss appeal deadlines** - Usually 30-60 days, strictly enforced
+✗ **Don't assume federal FOIA applies** - State agencies follow state law
+
+---
+
+## XVII. STATE-SPECIFIC NOTES OF INTEREST
+
+### States with Unique Features:
+
+**California (Medi-Cal)**
+- Largest Medicaid program in nation
+- Strong Public Records Act
+- Can request fee waiver for public interest
+
+**New York (Medicaid)**
+- Large, complex program
+- Freedom of Information Law (FOIL)
+- Committee on Open Government provides guidance
+
+**Texas (Medicaid)**
+- Large population, complex system
+- Public Information Act well-developed
+- Attorney General opinions provide guidance
+
+**Illinois (Medical Assistance)**
+- Strong FOIA law with penalties
+- Public Access Counselor provides free mediation
+- Commercial requests have different timeline (21 days)
+
+**Massachusetts (MassHealth)**
+- Comprehensive public records law
+- 10-day response requirement
+- May assess fees for large requests
+
+---
+
+## XVIII. CONCLUSION
+
+Successfully obtaining Medicaid FOIA records requires:
+1. Understanding the distinction between federal and state FOIA laws
+2. Following state-specific procedures and timelines
+3. Crafting specific, well-defined requests
+4. Being prepared for fees
+5. Knowing your appeal rights
+
+This guide, combined with the comprehensive contact spreadsheet, provides the tools needed to navigate FOIA requests across all US Medicaid programs.
+
+For the most current information, always check:
+- State Medicaid agency website
+- State Attorney General FOIA guidance
+- CMS.gov for federal Medicaid information
+
+---
+
+**Document Version**: 1.0
+**Last Updated**: November 2025
+**Compiled by**: Comprehensive Medicaid FOIA Research Project
